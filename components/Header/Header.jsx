@@ -16,7 +16,6 @@ const columns = [
     } 
 ];
 
-
 const Header = ({data}) => {
     console.log(data)
     return (
