@@ -2,7 +2,6 @@ import { PageHeader, Divider } from 'antd'
 
 import {Row, Col, Table, Image} from "antd"
 
-
 const columns = [
     {
       title: '#',
