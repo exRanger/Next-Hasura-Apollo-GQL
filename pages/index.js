@@ -38,7 +38,6 @@ export async function getServerSideProps({query}){
             ${getUsers()}
             ${getTasks(query)}
         }`
-    
     })
     return {
         props: {
