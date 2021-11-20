@@ -7,12 +7,12 @@ import {DataContext} from '../pages/index'
 export default function Topics(){
     const {tasks} = useContext(DataContext)
     const router = useRouter()
-
+    
     let [numLoadData, setNumLoadData] = useState(8)
 
     let handleButton = (e) => {
         setNumLoadData(numLoadData + 5)
-        const query = router.query
+        const {query} = router
         query.page = numLoadData
         router.push({
           pathname: router.pathname,
@@ -33,8 +33,9 @@ export default function Topics(){
                     <Link href={`/topics/${data.id}`}> 
                             {data.description}
                     </Link>
-                </List.Item>)}
+                </List.Item>
+                )}
             />
-    </Col>
+     </Col>
     )
 }
