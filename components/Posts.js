@@ -5,6 +5,7 @@ import {DataContext} from '../pages/index'
 
 
 export default function Posts(){
+    
     const data = useContext(DataContext)
 
     return (
@@ -17,7 +18,7 @@ export default function Posts(){
             </Col>
                 ))}
         </Row>
-    </Col>
+     </Col>
     </>
     )
 }
