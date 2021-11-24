@@ -13,7 +13,6 @@ export default (data) => {
     return (
     <DataContext.Provider value={data}>     
         <div className={styles.post}>
-           
            <Row>
            <Topics/>
             <Col>
@@ -23,7 +22,6 @@ export default (data) => {
            <h2>
                Описание поста: {data.tasksBy.description} 
            </h2>
-
            <h2>
                Пост создан пользователем: {data.tasksBy.user_id}
            </h2>
