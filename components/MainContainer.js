@@ -5,10 +5,10 @@ const Meta = ({children}) => {
     return (
     <>
         <Head>
-            <meta keywords="headmade, itcompany, it-headmade"></meta>
+            <meta keywords="SPA APP"></meta>
         </Head>
         <div>
-           <strong>TASK BY HEADMADE.</strong>
+           <strong>TASK BY</strong>
         </div>
         <div>
             {children}
