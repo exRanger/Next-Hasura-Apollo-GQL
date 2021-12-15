@@ -8,7 +8,7 @@ const Meta = ({children}) => {
             <meta keywords="SPA APP"></meta>
         </Head>
         <div>
-           <strong>TASK BY</strong>
+           <strong>Aggregator</strong>
         </div>
         <div>
             {children}
