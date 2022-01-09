@@ -4,7 +4,7 @@ const client = new ApolloClient({
     uri: "", // from process.env
     cache: new InMemoryCache(),
     headers: {
-        "", /
+        "", // from process.env
     }
 })
 
