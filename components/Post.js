@@ -29,5 +29,5 @@ export default function Post({user}){
             </Card>
         </Link>       
     </>
-    )
+    
 }
