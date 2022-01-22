@@ -20,7 +20,7 @@ export function getTasks(limit = 5){
 export function tasks_by_posts(id){
     return `tasks_by_pk(id: ${id}) {
         comments_id
-        created_at
+        created_posts_at
         description
         followers_id
         group_id
