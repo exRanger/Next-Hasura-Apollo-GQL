@@ -17,7 +17,7 @@ export function getTasks(limit = 5){
     }`
 }
 
-export function tasks_By_pk(id){
+export function tasks_by_posts(id){
     return `tasks_by_pk(id: ${id}) {
         comments_id
         created_at
@@ -25,17 +25,14 @@ export function tasks_By_pk(id){
         followers_id
         group_id
         id
-        isDone
     }`
 }
 
-export function tasks_By_pk(id){
-    return `tasks_by_pk(id: ${id}) {
+export function tasks_by_user(id){
+    return `tasks_by_user(id: ${id}) {
         comments_id
-        created_at
+        created_post_at
         description
-        followers_id
-        group_id
         id
         isDone
     }`
