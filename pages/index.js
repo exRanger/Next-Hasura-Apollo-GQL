@@ -3,7 +3,7 @@ import client from '../graphql/apollo'
 import {gql} from '@apollo/client'
 import {useState, useContext, createContext} from 'react'
 import {useRouter} from 'next/router'
-import Header from "../components/Header/Header"
+import Header from '../components/Header/Header'
 import {getTasks,getUsers} from '../graphql/queries'
 import {Row, Col, Card, List} from "antd"
 import 'antd/dist/antd.css'
