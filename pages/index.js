@@ -10,7 +10,6 @@ import 'antd/dist/antd.css'
 import Posts from '../components/Posts'
 import Topics from '../components/Topics'
 
-
 export const DataContext = createContext()
 
 const Index = (props) => {
