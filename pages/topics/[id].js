@@ -1,4 +1,4 @@
-import { useRouter } from "next/router"
+import {useRouter} from "next/router"
 import {DataContext} from '../../pages/index'
 import client from '../../graphql/apollo'
 import {gql} from '@apollo/client'
