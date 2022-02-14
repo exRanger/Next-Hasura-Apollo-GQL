@@ -15,20 +15,19 @@ export const DataContext = createContext()
 const Index = (props) => {
     return (
         <>
-    <MainContainer>
-        <DataContext.Provider value={props}>
-            <Row>
-                <Topics/>
-                <Posts/>
-            </Row>
-        </DataContext.Provider>
-    </MainContainer>    
-    </>
+            <MainContainer>
+                <DataContext.Provider value={props}>
+                    <Row>
+                        <Topics/>
+                        <Posts/>
+                    </Row>
+                 </DataContext.Provider>
+            </MainContainer>    
+        </>
     )
 }
 
 export default Index
-
 export async function getServerSideProps({query}){
 
     query = query.page || 10
