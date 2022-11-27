@@ -1,4 +1,4 @@
-import { useRouter } from "next/router"
+import {useRouter} from "next/router"
 import {DataContext} from '../../pages/index'
 import client from '../../graphql/apollo'
 import {gql} from '@apollo/client'
@@ -11,26 +11,23 @@ export default (data) => {
     const {query} = useRouter()
    
     return (
-
-    <DataContext.Provider value={data}>
-        <MainContainer>     
-            <div className={styles.post}>
-                <Row>
-                    <Topics/>
-                    <Col>
-                        <h1>
-                            {query.page}
-                            EXAMPLE PAGE
-                            <Avatar/>
-                        </h1>
-                    </Col>
-                </Row>
-            </div>
-       </MainContainer>
-    </DataContext.Provider>    
+        <DataContext.Provider value={data}>
+            <MainContainer>     
+                <div className={styles.post}>
+                    <Row>
+                        <Topics/>
+                        <Col>
+                            <h1>
+                                {query.page}
+                                <Avatar/>
+                            </h1>
+                        </Col>
+                    </Row>
+                </div>
+           </MainContainer>
+        </DataContext.Provider>    
     )
 }
-
 
 export async function getServerSideProps({query, params}){
     query = query.page || 10
