@@ -17,13 +17,13 @@ export default (data) => {
                     <Topics/>
                     <Col>
                         <h1>
-                            Данный пост создан: {data.tasksBy.created_at}
+                            Post created at: {data.tasksBy.created_at}
                         </h1>
                          <h2>
-                            Описание поста: {data.tasksBy.description} 
+                            Description: {data.tasksBy.description} 
                         </h2>
                          <h2>
-                            Пост создан пользователем: {data.tasksBy.user_id}
+                            Created by: {data.tasksBy.user_id}
                         </h2>
                     </Col>
                 </Row>
